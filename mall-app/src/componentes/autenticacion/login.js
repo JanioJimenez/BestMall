@@ -6,7 +6,8 @@ import {
   Grid,
   TextField,
 } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import googleIcon from '../../static/icons/google.svg';
+  import { makeStyles } from "@material-ui/core/styles";
 import login from "../../static/css/login.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -95,13 +96,14 @@ function Login() {
         </Grid>
 
         <p className={classes.inicioCuenta}>Inicia sesión en tu cuenta</p>
-
         <Grid item xs={12} className={classes.containerGoogleFacebook}>
           <Button
             className={classes.button}
             fullWidth
             variant="contained"
-          ></Button>
+          >
+            <img src={googleIcon} className='googleIcon' />
+          </Button>
 
           <Button className={classes.button} fullWidth variant="contained">
             <span
