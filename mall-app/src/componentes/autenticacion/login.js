@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#C2C2C2",
   },
   registrate: {
-    color: "#FFBA08",
+    color: "#DC2F02",
     marginLeft: 7,
   },
 }));
