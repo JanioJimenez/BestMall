@@ -22,7 +22,7 @@ const theme = createMuiTheme({
         }
 
     },
-    spacing: 12
+    spacing: 15
 });
 
 export default theme;
