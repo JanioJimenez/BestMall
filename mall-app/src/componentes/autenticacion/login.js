@@ -7,7 +7,7 @@ import {
   TextField,
 } from "@material-ui/core";
 import googleIcon from '../../static/icons/google.svg';
-  import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import login from "../../static/css/login.css";
 
 const useStyles = makeStyles((theme) => ({
@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   botonEnviar: {
-    marginTop: theme.spacing(2),
+    marginTop: theme.spacing(1.5),
   },
 
   user: {
@@ -71,7 +71,8 @@ const useStyles = makeStyles((theme) => ({
   },
   registrate: {
     color: "#DC2F02",
-    marginLeft: 7,
+    marginLeft: 5,
+    textDecoration: 'none',
   },
 }));
 
@@ -89,6 +90,7 @@ function Login() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              color: "#03071E"
             }}
           >
             Bestmall
@@ -126,7 +128,6 @@ function Login() {
         <form>
           
           <TextField
-            id="campo-email"
             className={classes.cuadroTextoLogin}
             variant="outlined"
             label="Email"
@@ -134,16 +135,18 @@ function Login() {
             name="email"
             fullWidth
             margin="normal"
+            size="small"
           />
 
           <TextField
-            id="campo-email"
             className={classes.cuadroTextoLogin}
             variant="outlined"
             label="Password"
             type="password"
             name="password"
             fullWidth
+            size="small"
+            margin="dense"
           />
 
 
@@ -167,7 +170,7 @@ function Login() {
 
           <p className={classes.notCuenta}>
             ¿No tienes una cuenta?
-            <a href="#" className={classes.registrate}>
+            <a href="/registrarUsuario" className={classes.registrate}>
               Regístrate
             </a>
           </p>

@@ -17,7 +17,11 @@ const styles = theme => ({
     },
     grow : {
         flexGrow: 1
-    }
+    },
+    botonLogin: {
+        color: '#03071E',
+        textDecoration: 'none'
+    },
 });
 
 class BarSession extends Component {
@@ -35,7 +39,11 @@ class BarSession extends Component {
                     </Typography>
                     <div className={classes.grow}></div>
                     <div className={classes.sectionDesktop}>
-                        <Button color = "inherit">Login</Button>
+                        <Button color = "inherit">
+                            <a href="/login" className={classes.botonLogin}>
+                                    Login
+                            </a>
+                        </Button>
                     </div>
                     <div className={classes.sectionMobile}>
                             <IconButton color="inherit">

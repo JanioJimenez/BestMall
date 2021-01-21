@@ -1,6 +1,10 @@
+
+.googleIcon{
+    width: 23px;
+}
+
 .opcion-cuenta{
     display: flex;
-    margin-top: 7px;
 }
 
 
@@ -16,6 +20,7 @@
     color: #C2C2C2 ;
 }
 
+
 .raya-opcion-izquierda{
     margin-top: 12px;
     width: 50%;
@@ -23,17 +28,7 @@
     border-top: 1px solid #C2C2C2;
 }
 
-.MuiInputBase-root {
-    margin-top: 8px;
-}
-
 label{
     color: #C2C2C2;
 }
-#campo-email{
-    padding: 10px;
-}
 
-.googleIcon{
-    width: 23px;
-}
